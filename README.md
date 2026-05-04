@@ -8,7 +8,8 @@ Early detection of polyps is crucial for preventing colorectal cancer. This proj
 ---
 
 ## 🎯 Problem Statement
-Manual detection of polyps in colonoscopy images is:
+Manual detection of polyps in colonoscopy images is:<img width="255" height="256" alt="input" src="https://github.com/user-attachments/assets/5584db80-24f2-4278-beb5-bd9ac7cd3169" />
+
 - Time-consuming  
 - Prone to human error  
 
@@ -107,7 +108,9 @@ Model performance evaluated using:
 
 ## 🏆 Achievement
 - Developed as part of academic/project work  
-- Associated with **MNNIT project/certification**  
+- Associated with **MNNIT project/certification**
+
+  ![](certificate/mnnit_certificate_1.png)
 👉 [View Certificate](certificate/shubhranshu_mnnit.pdf)
 
 ---
