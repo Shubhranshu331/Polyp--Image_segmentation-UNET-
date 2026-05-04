@@ -1,44 +1,136 @@
-This project aims to develop and evaluate a deep learning model for accurate segmentation of polyps in colonoscopy images. The U-Net architecture, a convolutional neural network renowned for its performance in image segmentation tasks, will be implemented and trained on a suitable dataset. The entire project will be executed using Jupyter Notebook for code development, experimentation, and result visualization.
+# 🧠 Polyp Segmentation using U-Net
 
-Methodology:
+## 📌 Overview
+This project focuses on **automatic segmentation of polyps in colonoscopy images** using a deep learning model based on the **U-Net architecture**.
 
-Dataset Acquisition and Preprocessing:
+Early detection of polyps is crucial for preventing colorectal cancer. This project aims to assist in medical image analysis by accurately identifying and segmenting polyp regions.
 
-Obtain a labeled dataset of colonoscopy images containing polyps and corresponding ground truth masks.
-Preprocess images by resizing, normalizing, and augmenting them to improve model robustness.
-U-Net Architecture Implementation:
+---
 
-Develop the U-Net model in Python using TensorFlow or Keras libraries.
-Define the network architecture, including encoding and decoding paths, and skip connections.
-Model Training:
+## 🎯 Problem Statement
+Manual detection of polyps in colonoscopy images is:
+- Time-consuming  
+- Prone to human error  
 
-Split the dataset into training, validation, and testing sets.
-Train the U-Net model using an appropriate loss function (e.g., Dice loss) and optimization algorithm (e.g., Adam).
-Monitor training progress using metrics like accuracy, precision, recall, and F1-score.
-Model Evaluation:
+👉 This project builds a **deep learning-based solution** to automate the segmentation process.
 
-Evaluate the trained model on the validation and testing sets.
-Compute performance metrics to assess segmentation accuracy.
-Visualize model predictions to analyze strengths and weaknesses.
-Refinement and Optimization:
+---
 
-Experiment with different hyperparameters, architectures, and data augmentation techniques to improve performance.
-Explore ensemble methods or transfer learning for potential enhancements.
-Tools and Technologies:
+## 🧠 Model Architecture
+- U-Net (Encoder–Decoder CNN)
+- Skip connections for better spatial information
+- Designed specifically for biomedical image segmentation
 
-Python programming language
-Jupyter Notebook for development environment
-TensorFlow or Keras deep learning framework
-OpenCV for image processing (optional)
-Dataset: A publicly available or proprietary dataset of colonoscopy images with polyp annotations
-Expected Outcomes:
+---
 
-A trained U-Net model capable of accurately segmenting polyps in colonoscopy images.
-Quantitative evaluation of model performance using relevant metrics.
-Visualizations of model predictions for qualitative assessment.
-Insights into the challenges and limitations of polyp segmentation.
-Potential Applications:
+## 📂 Dataset
+- Colonoscopy image dataset with corresponding **ground truth masks**
+- Preprocessing steps:
+  - Image resizing  
+  - Normalization  
+  - Data augmentation  
 
-Aid in early detection of colorectal cancer by identifying polyps.
-Assist physicians in polyp localization and characterization.
-Contribute to the development of computer-aided diagnosis systems for colorectal cancer.
+---
+
+## ⚙️ Methodology
+
+### 1. Data Preprocessing
+- Resizing images  
+- Normalizing pixel values  
+- Data augmentation for robustness  
+
+---
+
+### 2. Model Implementation
+- Built using:
+  - Python  
+  - TensorFlow / Keras  
+
+---
+
+### 3. Training
+- Loss Function: Dice Loss  
+- Optimizer: Adam  
+- Dataset split:
+  - Training  
+  - Validation  
+  - Testing  
+
+---
+
+### 4. Evaluation
+Model performance evaluated using:
+- Accuracy  
+- Precision  
+- Recall  
+- F1 Score  
+
+---
+
+## 📊 Results
+| Metric | Training Set | Validation Set |
+| :--- | :--- | :--- |
+| **Accuracy (acc)** | 0.9849[cite: 1] | 0.9520[cite: 1] |
+| **IOU** | 0.3825[cite: 1] | 0.3081[cite: 1] |
+| **Loss (Binary Crossentropy)** | 0.1165[cite: 1] | 0.1707[cite: 1] |
+| **Precision** | 0.9569[cite: 1] | 0.8105[cite: 1] |
+| **Recall** | 0.9073[cite: 1] | 0.6871[cite: 1] |
+
+- Achieved strong pixel-wise accuracy of 95.20% on the validation dataset.
+- Demonstrated significant learning progress, reducing training loss from 0.5574 to 0.1165 over 42 epochs.
+- Successfully improved precision to 81.05% on validation data, indicating a high rate of correct polyp pixel identification.
+- Reached a Recall of 68.71% on the validation set, showing the model's ability to identify the majority of polyp regions.
+- Optimized performance through learning rate management, with the optimizer successfully adapting from $1e-4$ down to $1e-8$ to refine weights.
+- Maintained stable convergence after Epoch 32, with EarlyStopping ensuring the best weights were preserved before the validation loss plateaued.
+
+---
+
+## 📸 Output Samples
+
+| Input Image | Ground Truth | Prediction |
+|------------|-------------|------------|
+| ![](sample/input.png) | ![](sample/groundtruth.png) | ![](sample/prediction.png) |
+
+---
+
+## 🛠 Tech Stack
+- Programming Language: Python  
+- Deep Learning Framework: TensorFlow and Keras
+- Model Architecture: U-Net (Encoder-Decoder CNN)
+- Optimization Algorithm: Adam Optimizer
+- Data Processing: NumPy and TensorFlow tf.data
+- API  Training : TensorBoard and CSVLogger
+- Hardware Acceleration: NVIDIA GPU (/gpu:0)
+- Model Management: Keras Callbacks (ModelCheckpoint, EarlyStopping, ReduceLROnPlateau)
+
+---
+
+## 🏆 Achievement
+- Developed as part of academic/project work  
+- Associated with **MNNIT project/certification**  
+👉 [View Certificate](certificate/shubhranshu_mnnit.pdf)
+
+---
+
+## 🚀 Applications
+- Early detection of colorectal cancer  
+- Computer-aided diagnosis systems  
+- Medical image analysis  
+
+---
+
+## ⚠️ Limitations
+- Performance depends on dataset quality  
+- May struggle with complex or unclear images  
+
+---
+
+## 📌 Future Improvements
+- Use advanced architectures (Attention U-Net, etc.)  
+- Improve dataset size  
+- Hyperparameter tuning  
+
+---
+
+## ⭐ Conclusion
+This project demonstrates how deep learning can assist in **medical diagnostics** by automating polyp detection and improving accuracy.
