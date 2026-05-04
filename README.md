@@ -90,7 +90,7 @@ Model performance evaluated using:
 
 | Input Image | Ground Truth | Prediction |
 |------------|-------------|------------|
-| ![](sample/input.png) | ![](sample/groundtruth.png) | ![](sample/prediction.png) |
+| ![](readme/input.png) | ![](readme/groundtruth.png) | ![](readme/prediction.png) |
 
 ---
 
@@ -110,8 +110,8 @@ Model performance evaluated using:
 - Developed as part of academic/project work  
 - Associated with **MNNIT project/certification**
 
-  ![](certificate/mnnit_certificate_1.png)
-👉 [View Certificate](certificate/shubhranshu_mnnit.pdf)
+  ![](readme/mnnit_certificate-1.png)
+👉 [View Certificate](readme/shubhranshu_mnnit.pdf)
 
 ---
 
