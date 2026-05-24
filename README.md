@@ -83,7 +83,7 @@ Model performance evaluated using:
 - Reached a Recall of 68.71% on the validation set, showing the model's ability to identify the majority of polyp regions.
 - Optimized performance through learning rate management, with the optimizer successfully adapting from $1e-4$ down to $1e-8$ to refine weights.
 - Maintained stable convergence after Epoch 32, with EarlyStopping ensuring the best weights were preserved before the validation loss plateaued.
-
+- Model: **[Hugging Face Repository: polyp_image_segmentation](https://huggingface.co/Shubhranshu331/polyp_image_segmentation/tree/main)**
 ---
 
 ## 📸 Output Samples
